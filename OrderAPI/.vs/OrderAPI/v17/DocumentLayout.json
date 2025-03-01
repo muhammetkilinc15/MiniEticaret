@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\OrderAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2FF32E81-F722-422D-B022-64A8474882DB}|OrderAPI.csproj|c:\\users\\bemu\\desktop\\microservis\\minieticaret\\orderapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2FF32E81-F722-422D-B022-64A8474882DB}|OrderAPI.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF32E81-F722-422D-B022-64A8474882DB}|OrderAPI.csproj|c:\\users\\bemu\\desktop\\microservis\\minieticaret\\orderapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2FF32E81-F722-422D-B022-64A8474882DB}|OrderAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2FF32E81-F722-422D-B022-64A8474882DB}|OrderAPI.csproj|c:\\users\\bemu\\desktop\\microservis\\minieticaret\\orderapi\\module\\ordermodule\\orderenpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2FF32E81-F722-422D-B022-64A8474882DB}|OrderAPI.csproj|solutionrelative:module\\ordermodule\\orderenpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,12 +31,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\OrderAPI\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\OrderAPI\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-01T19:08:13.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\OrderAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\OrderAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-01T19:07:08.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "OrderEnpoints.cs",
               "DocumentMoniker": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\OrderAPI\\Module\\OrderModule\\OrderEnpoints.cs",
               "RelativeDocumentMoniker": "Module\\OrderModule\\OrderEnpoints.cs",
               "ToolTip": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\OrderAPI\\Module\\OrderModule\\OrderEnpoints.cs",
               "RelativeToolTip": "Module\\OrderModule\\OrderEnpoints.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAuwCYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-01T06:32:11.893Z",
               "EditorCaption": ""
