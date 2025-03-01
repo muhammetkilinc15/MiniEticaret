@@ -6,6 +6,7 @@ using ShopingCartAPI.Context;
 using ShopingCartAPI.DTOS;
 using ShopingCartAPI.Models;
 using System.Linq;
+using System.Net.Http;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
@@ -16,14 +17,16 @@ namespace ShopingCartAPI.Modules.ShopingModule
         public void AddRoutes(IEndpointRouteBuilder app)
         {
             IEndpointRouteBuilder group = app.MapGroup("carts");
-            group.MapGet("", async ([FromServices] IHttpClientFactory httpClientFactory, [FromServices] ApplicationDbContext context, CancellationToken cancellationToken) =>
+            group.MapGet("", async (IConfiguration configuration, [FromServices] IHttpClientFactory httpClientFactory, [FromServices] ApplicationDbContext context, CancellationToken cancellationToken) =>
             {
-                var shopingCarts = await context.ShopingCarts.AsNoTracking().ToListAsync(cancellationToken);
+                List<ShopingCart> shopingCarts = await context.ShopingCarts.AsNoTracking().ToListAsync(cancellationToken);
                 HttpClient client = httpClientFactory.CreateClient();
                 // http://products-:8080/products
-                HttpResponseMessage response = await client.GetAsync("http://products:8080/products", cancellationToken);
+
+                var baseUrl = configuration.GetSection("HttpRequests:products").Value;
+                HttpResponseMessage response = await client.GetAsync(baseUrl, cancellationToken);
                 Result<List<ProductDto>> products = new(new List<ProductDto>(), false, "Error");
-                
+
                 if (response.IsSuccessStatusCode)
                 {
                     products = await response.Content.ReadFromJsonAsync<Result<List<ProductDto>>>(cancellationToken);
@@ -55,6 +58,50 @@ namespace ShopingCartAPI.Modules.ShopingModule
                 await context.SaveChangesAsync(cancellationToken);
                 return Results.Ok(Result<string>.Success("Shoping Cart Created"));
             });
+
+
+            group.MapGet("/createOrder", async ([FromServices] IHttpClientFactory httpClientFactory, ApplicationDbContext context, IConfiguration configuration, CancellationToken cancellationToken) =>
+            {
+                List<ShopingCart> shopingCarts = await context.ShopingCarts.AsNoTracking().ToListAsync(cancellationToken);
+                HttpClient client = httpClientFactory.CreateClient();
+                var productBaseUrl = configuration.GetSection("HttpRequests:products").Value;
+                HttpResponseMessage productResponse = await client.GetAsync(productBaseUrl, cancellationToken);
+                Result<List<ProductDto>> products = new(new List<ProductDto>(), false, "Error");
+
+                if (productResponse.IsSuccessStatusCode)
+                {
+                    products = await productResponse.Content.ReadFromJsonAsync<Result<List<ProductDto>>>(cancellationToken);
+                }
+                else
+                {
+                    return Results.Ok(Result<List<ShopingCartDto>>.Fail("Products api ye bağlanamadı"));
+                }
+                List<CreateOrderDto> response = shopingCarts.Select(x => new CreateOrderDto
+                (
+                   x.ProductId,
+                   x.Quantity,
+                   products!.Data!.Find(p => p.Id == x.ProductId).Price
+                )).ToList();
+                var ordersEndpoint = configuration.GetSection("HttpRequests:orders").Value;
+                HttpResponseMessage orderMessage = await client.PostAsJsonAsync(ordersEndpoint, response, cancellationToken);
+                if (orderMessage.IsSuccessStatusCode)
+                {
+                    List<ChangeProductStockDto> change = shopingCarts.Select(x => new ChangeProductStockDto
+                    (
+                        x.ProductId,
+                        x.Quantity
+                    )).ToList();
+                    HttpResponseMessage stockResponse = await client.PutAsJsonAsync($"{productBaseUrl}/change-product-stock", change, cancellationToken);
+                    context.ShopingCarts.RemoveRange(shopingCarts);
+                    await context.SaveChangesAsync(cancellationToken);
+                    return Results.Ok(Result<string>.Success("Order Created"));
+                }
+                else
+                {
+                    return Results.Ok(Result<string>.Fail("Order apiye bağlanamadı"));
+                }
+            }).Produces<string>();
+
         }
     }
 }

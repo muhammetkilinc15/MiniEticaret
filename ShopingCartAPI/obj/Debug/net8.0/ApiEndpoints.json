@@ -36,5 +36,23 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "ShopingCartAPI.Modules.ShopingModule.ShopingEndPoint\u002B\u003C\u003Ec",
+    "Method": "\u003CAddRoutes\u003Eb__0_2",
+    "RelativePath": "carts/createOrder",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

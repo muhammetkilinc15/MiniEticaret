@@ -138,3 +138,4 @@ C:\Users\Bemu\Desktop\Microservis\MiniEticaret\ShopingCartAPI\obj\Debug\net8.0\r
 C:\Users\Bemu\Desktop\Microservis\MiniEticaret\ShopingCartAPI\obj\Debug\net8.0\ShopingCartAPI.pdb
 C:\Users\Bemu\Desktop\Microservis\MiniEticaret\ShopingCartAPI\obj\Debug\net8.0\ShopingCartAPI.genruntimeconfig.cache
 C:\Users\Bemu\Desktop\Microservis\MiniEticaret\ShopingCartAPI\obj\Debug\net8.0\ref\ShopingCartAPI.dll
+C:\Users\Bemu\Desktop\Microservis\MiniEticaret\ShopingCartAPI\obj\Debug\net8.0\ShopingCartAPI.sourcelink.json
