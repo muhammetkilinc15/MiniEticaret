@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\ShopingCartAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0B8EA72E-3B2C-4BEC-B760-4FD04897F915}|ShopingCartAPI.csproj|c:\\users\\bemu\\desktop\\microservis\\minieticaret\\shopingcartapi\\modules\\shopingmodule\\shopingendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B8EA72E-3B2C-4BEC-B760-4FD04897F915}|ShopingCartAPI.csproj|solutionrelative:modules\\shopingmodule\\shopingendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B8EA72E-3B2C-4BEC-B760-4FD04897F915}|ShopingCartAPI.csproj|c:\\users\\bemu\\desktop\\microservis\\minieticaret\\shopingcartapi\\common\\results\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B8EA72E-3B2C-4BEC-B760-4FD04897F915}|ShopingCartAPI.csproj|solutionrelative:common\\results\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B8EA72E-3B2C-4BEC-B760-4FD04897F915}|ShopingCartAPI.csproj|c:\\users\\bemu\\desktop\\microservis\\minieticaret\\shopingcartapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B8EA72E-3B2C-4BEC-B760-4FD04897F915}|ShopingCartAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShopingEndPoint.cs",
+              "DocumentMoniker": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\ShopingCartAPI\\Modules\\ShopingModule\\ShopingEndPoint.cs",
+              "RelativeDocumentMoniker": "Modules\\ShopingModule\\ShopingEndPoint.cs",
+              "ToolTip": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\ShopingCartAPI\\Modules\\ShopingModule\\ShopingEndPoint.cs",
+              "RelativeToolTip": "Modules\\ShopingModule\\ShopingEndPoint.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAuwBYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T05:35:50.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Result.cs",
+              "DocumentMoniker": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\ShopingCartAPI\\Common\\Results\\Result.cs",
+              "RelativeDocumentMoniker": "Common\\Results\\Result.cs",
+              "ToolTip": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\ShopingCartAPI\\Common\\Results\\Result.cs",
+              "RelativeToolTip": "Common\\Results\\Result.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T05:58:18.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\ShopingCartAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\ShopingCartAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAnwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T05:56:50.54Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "ContainingType": "ShopingCartAPI.Modules.ShopingModule.ShopingEndPoint\u002B\u003C\u003Ec",
+    "Method": "\u003CAddRoutes\u003Eb__0_0",
+    "RelativePath": "carts/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ShopingCartAPI.Modules.ShopingModule.ShopingEndPoint\u002B\u003C\u003Ec",
+    "Method": "\u003CAddRoutes\u003Eb__0_1",
+    "RelativePath": "carts/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ShopingCartAPI.DTOS.CreateShopingCartDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

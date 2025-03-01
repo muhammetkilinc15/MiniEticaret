@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "OTBqYdt1YOQ5UJ0aRGV7yw9i+mqQQjRv/OtlbI0KzZ4=",
+  "Source": "MiniEticaret.Products.WebAPI",
+  "BasePath": "_content/MiniEticaret.Products.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
