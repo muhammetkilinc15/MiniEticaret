@@ -120,6 +120,28 @@
   },
   {
     "ContainingType": "MiniEticaret.Products.WebAPI.Module.ProductModule.ProductModule\u002B\u003C\u003Ec",
+    "Method": "\u003CAddRoutes\u003Eb__0_6",
+    "RelativePath": "products/change-product-stock",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "System.Collections.Generic.List\u00601[[MiniEticaret.Products.WebAPI.DTOs.ChangeProductStockDto, MiniEticaret.Products.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MiniEticaret.Products.WebAPI.Module.ProductModule.ProductModule\u002B\u003C\u003Ec",
     "Method": "\u003CAddRoutes\u003Eb__0_0",
     "RelativePath": "products/seedData",
     "HttpMethod": "GET",

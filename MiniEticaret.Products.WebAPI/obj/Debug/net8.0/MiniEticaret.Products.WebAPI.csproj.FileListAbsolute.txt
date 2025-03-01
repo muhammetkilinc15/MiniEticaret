@@ -167,3 +167,4 @@ C:\Users\Bemu\Desktop\Microservis\MiniEticaret\MiniEticaret.Products.WebAPI\obj\
 C:\Users\Bemu\Desktop\Microservis\MiniEticaret\MiniEticaret.Products.WebAPI\obj\Debug\net8.0\MiniEticaret.Products.WebAPI.pdb
 C:\Users\Bemu\Desktop\Microservis\MiniEticaret\MiniEticaret.Products.WebAPI\obj\Debug\net8.0\MiniEticaret.Products.WebAPI.genruntimeconfig.cache
 C:\Users\Bemu\Desktop\Microservis\MiniEticaret\MiniEticaret.Products.WebAPI\obj\Debug\net8.0\ref\MiniEticaret.Products.WebAPI.dll
+C:\Users\Bemu\Desktop\Microservis\MiniEticaret\MiniEticaret.Products.WebAPI\obj\Debug\net8.0\MiniEticaret.Products.WebAPI.sourcelink.json

@@ -71,8 +71,6 @@ namespace MiniEticaret.Products.WebAPI.Module.ProductModule
                 return Results.Ok(Result<Product>.Success(p));
             }).Produces<Result<Product>>();
 
-
-
             group.MapPut("/{id:guid}", async (ApplicationDbContext context, Guid id, CreatProductDto product, CancellationToken cancellationToken) =>
             {
                 var p = await context.Products.FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
@@ -98,6 +96,23 @@ namespace MiniEticaret.Products.WebAPI.Module.ProductModule
                 await context.SaveChangesAsync(cancellationToken);
                 return Results.Ok(Result<Product>.Success(p));
             }).Produces<Result<Product>>();
+
+            group.MapPut("/change-product-stock", async (List<ChangeProductStockDto> request, ApplicationDbContext context, CancellationToken cancellationToken) =>
+            {
+                foreach (var item in request)
+                {
+                    Product product = await context.Products.FirstOrDefaultAsync(x => x.Id == item.ProductId, cancellationToken);
+                    if (product is not null)
+                    {
+                        if (product.Stock > 0)
+                            product.Stock -= item.Quantity;
+                        await context.SaveChangesAsync(cancellationToken);
+                    }
+                }
+                return Results.Created();
+
+            });
+
         }
     }
 }
