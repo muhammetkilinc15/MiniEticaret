@@ -27,11 +27,11 @@ namespace ApiGateway.Services
             );
 
             JwtSecurityToken token = new(
-                issuer: _options.Value.Audience,
+                issuer: _options.Value.Issuer,
                 audience: _options.Value.Audience,
                 claims: claims,
-                notBefore: DateTime.UtcNow,
-                expires: DateTime.UtcNow.AddMinutes(1),
+                notBefore: DateTime.Now,
+                expires: DateTime.Now.AddDays(1),
                 signingCredentials: credentials
             );
             JwtSecurityTokenHandler handler = new();

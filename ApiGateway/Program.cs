@@ -1,6 +1,7 @@
 ﻿using ApiGateway.Context;
 using ApiGateway.Module.Abstractions;
 using ApiGateway.Services;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -30,6 +31,19 @@ builder.Services.AddCors(options =>
     });
 });
 
+// Rate Limiting
+
+builder.Services.AddRateLimiter(rateLimiterOptions =>
+{
+    rateLimiterOptions.AddFixedWindowLimiter("fixed", options =>
+    {
+        options.Window = TimeSpan.FromSeconds(15); // 15 saniyede bir sıfırlanacak
+        options.PermitLimit = 5; // 15 saniyede maksimum 5 istek alınacak
+        options.QueueLimit = 5; // 15 saniyede 5'ten fazla istek gelirse kuyruğa alınacak
+    });
+});
+
+
 // ⬇️ Reverse Proxy ayarları
 builder.Services.AddReverseProxy()
     .LoadFromConfig(builder.Configuration.GetSection("ReverseProxy"));
@@ -51,7 +65,13 @@ builder.Services.AddAuthentication().AddJwtBearer("Bearer", options =>
     };
 });
 
-builder.Services.AddAuthorization(); // ✅ Buraya alındı!
+builder.Services.AddAuthorization(opt =>
+{
+    opt.AddPolicy("Authenticated", policy =>
+    {
+        policy.RequireAuthenticatedUser();
+    });
+}); // ✅ Buraya alındı!
 
 var app = builder.Build(); // 🔥 Artık servis koleksiyonuna ekleme yapılamaz!
 
@@ -60,6 +80,8 @@ var app = builder.Build(); // 🔥 Artık servis koleksiyonuna ekleme yapılamaz
 app.UseAuthentication(); // ✅ Authentication middleware'i eklenmeli
 app.UseAuthorization(); // ✅ Authorization middleware'i eklenmeli
 app.UseCors();
+
+app.UseRateLimiter();
 app.MapReverseProxy();
 
 // ⬇️ Modülleri yükleme

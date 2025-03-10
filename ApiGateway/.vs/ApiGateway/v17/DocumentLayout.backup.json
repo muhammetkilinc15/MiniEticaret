@@ -11,14 +11,6 @@
       "RelativeMoniker": "D:0:0:{A2C5768E-B7DC-40F9-8386-A6B7EF6E1BEC}|ApiGateway.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2C5768E-B7DC-40F9-8386-A6B7EF6E1BEC}|ApiGateway.csproj|c:\\users\\bemu\\desktop\\microservis\\minieticaret\\apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2C5768E-B7DC-40F9-8386-A6B7EF6E1BEC}|ApiGateway.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2C5768E-B7DC-40F9-8386-A6B7EF6E1BEC}|ApiGateway.csproj|c:\\users\\bemu\\desktop\\microservis\\minieticaret\\apigateway\\services\\jwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2C5768E-B7DC-40F9-8386-A6B7EF6E1BEC}|ApiGateway.csproj|solutionrelative:services\\jwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2C5768E-B7DC-40F9-8386-A6B7EF6E1BEC}|ApiGateway.csproj|c:\\users\\bemu\\desktop\\microservis\\minieticaret\\apigateway\\services\\ijwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2C5768E-B7DC-40F9-8386-A6B7EF6E1BEC}|ApiGateway.csproj|solutionrelative:services\\ijwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -34,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,28 +42,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\ApiGateway\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\ApiGateway\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-09T19:13:43.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\ApiGateway\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\ApiGateway\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAADwAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T19:07:07.857Z",
+              "WhenOpened": "2025-03-09T23:47:51.958Z",
               "EditorCaption": ""
             },
             {
@@ -82,27 +61,14 @@
               "RelativeDocumentMoniker": "appsettings.Development.json",
               "ToolTip": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\ApiGateway\\appsettings.Development.json",
               "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-03-09T19:05:28.939Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "JwtProvider.cs",
-              "DocumentMoniker": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\ApiGateway\\Services\\JwtProvider.cs",
-              "RelativeDocumentMoniker": "Services\\JwtProvider.cs",
-              "ToolTip": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\ApiGateway\\Services\\JwtProvider.cs",
-              "RelativeToolTip": "Services\\JwtProvider.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T19:04:25.975Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "IJwtProvider.cs",
               "DocumentMoniker": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\ApiGateway\\Services\\IJwtProvider.cs",
               "RelativeDocumentMoniker": "Services\\IJwtProvider.cs",
@@ -110,12 +76,11 @@
               "RelativeToolTip": "Services\\IJwtProvider.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T19:04:25.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T19:04:25.014Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "AuthModules.cs",
               "DocumentMoniker": "C:\\Users\\Bemu\\Desktop\\Microservis\\MiniEticaret\\ApiGateway\\Module\\AuthModules.cs",
               "RelativeDocumentMoniker": "Module\\AuthModules.cs",
@@ -123,8 +88,7 @@
               "RelativeToolTip": "Module\\AuthModules.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAAAB0AAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T19:01:08.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T19:01:08.768Z"
             }
           ]
         }
